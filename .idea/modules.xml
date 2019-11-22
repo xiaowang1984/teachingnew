@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/interface/interface.iml" filepath="$PROJECT_DIR$/interface/interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pojo/pojo.iml" filepath="$PROJECT_DIR$/pojo/pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentback/studentback.iml" filepath="$PROJECT_DIR$/studentback/studentback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentservice/studentservice.iml" filepath="$PROJECT_DIR$/studentservice/studentservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teacherback/teacherback.iml" filepath="$PROJECT_DIR$/teacherback/teacherback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teacherservice/teacherservice.iml" filepath="$PROJECT_DIR$/teacherservice/teacherservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teaching.iml" filepath="$PROJECT_DIR$/teaching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="interface" />
+        <module name="pojo" />
+        <module name="studentback" />
+        <module name="studentservice" />
+        <module name="teacherback" />
+        <module name="teacherservice" />
+        <module name="util" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="interface" target="1.8" />
+      <module name="pojo" target="1.8" />
+      <module name="studentback" target="1.8" />
+      <module name="studentservice" target="1.8" />
+      <module name="teacherback" target="1.8" />
+      <module name="teacherservice" target="1.8" />
+      <module name="teaching" target="1.8" />
+      <module name="util" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
