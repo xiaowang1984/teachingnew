@@ -53,7 +53,6 @@ public class MyConfig {
                 SerializerFeature.PrettyFormat,
                 SerializerFeature.WriteNullStringAsEmpty,
                 SerializerFeature.WriteMapNullValue,
-                SerializerFeature.WriteNullListAsEmpty,
                 SerializerFeature.DisableCircularReferenceDetect
         );
         fastJsonConfig.setDateFormat("yyyy-MM-dd");

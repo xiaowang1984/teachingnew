@@ -23,6 +23,25 @@ open class ${table.serviceImplName} : ${superServiceImplClass}<${table.mapperNam
 }
 <#else>
 public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
-
+    @Resource
+    ${table.mapperName} ${table.entityPath}Mapper;
+    @Override
+    public IPage<${entity}> page(${entity} ${table.entityPath}) {
+        QueryWrapper<${entity}> wrapper = new QueryWrapper<>();
+        if(StringUtils.isNotBlank(${table.entityPath}.getName()))
+        wrapper.like("name","%"+${table.entityPath}.getName()+"%");
+        if(${table.entityPath}.getIsDel()!=null)
+        wrapper.eq("is_del",${table.entityPath}.getIsDel());
+        return this.page(new Page<>(${table.entityPath}.getPageNo(),${table.entityPath}.getPageSize()),wrapper);
+    }
+    @Override
+    public List<${entity}> list(${entity} ${table.entityPath}) {
+        QueryWrapper<${entity}> wrapper = new QueryWrapper<>();
+        if(StringUtils.isNotBlank(${table.entityPath}.getName()))
+            wrapper.like("name", ${table.entityPath}.getName());
+        if(teacher.getIsDel()!=null)
+            wrapper.eq("is_del", ${table.entityPath}.getIsDel());
+        return list(wrapper);
+    }
 }
 </#if>

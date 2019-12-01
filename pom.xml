@@ -38,6 +38,7 @@
         <jedis.version>2.9.0</jedis.version>
         <fdfs.version>1.26.6</fdfs.version>
         <fastjson.version>1.2.62</fastjson.version>
+        <guava.version>27.0.1-jre</guava.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -139,6 +140,7 @@
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
             </dependency>
+            <!--fastDFS 包 -->
             <dependency>
                 <groupId>com.github.tobato</groupId>
                 <artifactId>fastdfs-client</artifactId>
@@ -149,6 +151,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <!--guava 组件 -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -30,6 +30,7 @@ public class SkillServiceImpl extends ServiceImpl<SkillMapper, Skill> implements
     @Override
     public List<Skill> list(Skill skill) {
         List<Skill> list = getChildren(skill);
+        System.out.println(list);
         return list;
     }
 
@@ -42,7 +43,6 @@ public class SkillServiceImpl extends ServiceImpl<SkillMapper, Skill> implements
         List<Skill> list = this.list(queryWrapper);
         for(Skill skill : list)
             skill.setChildren(getChildren(skill));
-
         return list.size()==0?null:list;
     }
     public List<Skill> getSkillByRank(int rank){

@@ -24,7 +24,6 @@ import java.util.List;
 @Service
 @Component
 public class AbilityInfoServiceImpl extends ServiceImpl<AbilityInfoMapper, AbilityInfo> implements IAbilityInfoService {
-
     @Override
     public IPage<AbilityInfo> page(AbilityInfo abilityInfo) {
         QueryWrapper<AbilityInfo> queryWrapper = new QueryWrapper<>();
@@ -42,6 +41,13 @@ public class AbilityInfoServiceImpl extends ServiceImpl<AbilityInfoMapper, Abili
             queryWrapper.like("name",abilityInfo.getName());
         if(abilityInfo.getIsDel()!=null)
             queryWrapper.eq("is_del",abilityInfo.getIsDel());
+        return this.list(queryWrapper);
+    }
+
+    @Override
+    public List<AbilityInfo> listByIds(List<Integer> ids) {
+        QueryWrapper<AbilityInfo> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("is_del",1).in("id",ids);
         return this.list(queryWrapper);
     }
 }

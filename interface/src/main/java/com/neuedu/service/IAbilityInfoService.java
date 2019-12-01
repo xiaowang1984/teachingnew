@@ -18,4 +18,5 @@ import java.util.List;
 public interface IAbilityInfoService extends IService<AbilityInfo> {
     IPage<AbilityInfo> page(AbilityInfo abilityInfo);
     List<AbilityInfo> list(AbilityInfo abilityInfo);
+    List<AbilityInfo> listByIds(List<Integer> ids);
 }
