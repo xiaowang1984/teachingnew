@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: teacher-service
+  profiles:
+      active: datasource,teacherservice
+  cloud:
+    nacos:
+      config:
+        server-addr: 49.232.20.15:8848
+        file-extension: yml
+        prefix: neuedu
+  mvc:
+    date-format: yyyy-MM-dd
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8

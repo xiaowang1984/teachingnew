@@ -26,6 +26,7 @@ public class JWTInterceptor implements HandlerInterceptor {
             HandlerMethod handlerMethod = (HandlerMethod) handler;
             if(!handlerMethod.hasMethodAnnotation(PassToken.class)){
                 String token=request.getHeader("token");
+                System.out.println(token);
                 if(StringUtils.isBlank(token)) {
                     response.getWriter().write(objectMapper.writeValueAsString(new Result(-1, null, "miss token")));
                     return false;

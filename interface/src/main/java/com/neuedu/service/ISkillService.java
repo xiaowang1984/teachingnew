@@ -20,4 +20,5 @@ public interface ISkillService extends IService<Skill> {
     List<Skill> getSkillByRank(int rank);
     IPage<Skill> listByParent(Skill skill);
     boolean sort(Integer[] ids);
+    boolean del(Integer id);
 }

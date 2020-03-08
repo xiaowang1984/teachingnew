@@ -1,0 +1,12 @@
+com\neuedu\service\IAbilityDirectionService.class
+com\neuedu\service\IImgsService.class
+com\neuedu\service\IAbilityInfoService.class
+com\neuedu\service\ISkillService.class
+com\neuedu\service\ITeacherService.class
+com\neuedu\service\ICourseService.class
+com\neuedu\service\IKnowledgeService.class
+com\neuedu\service\IImgbytesService.class
+com\neuedu\service\INeueducaseService.class
+com\neuedu\service\IOkrService.class
+com\neuedu\service\IPubStudentService.class
+com\neuedu\service\IAbilityTypeService.class

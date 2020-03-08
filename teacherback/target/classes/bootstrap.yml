@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: teacherback
+  profiles:
+      active: teacherback
+  cloud:
+    nacos:
+      config:
+        server-addr: 49.232.20.15:8848
+        file-extension: yml
+        prefix: neuedu

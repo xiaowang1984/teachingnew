@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="interface" />
-        <module name="pojo" />
-        <module name="studentback" />
-        <module name="studentservice" />
         <module name="teacherback" />
-        <module name="teacherservice" />
+        <module name="studentback" />
         <module name="util" />
+        <module name="pojo" />
+        <module name="studentservice" />
+        <module name="teacherservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,5 +25,16 @@
       <module name="teaching" target="1.8" />
       <module name="util" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="interface" options="-parameters" />
+      <module name="pojo" options="-parameters" />
+      <module name="studentback" options="-parameters" />
+      <module name="studentservice" options="-parameters" />
+      <module name="teacherback" options="-parameters" />
+      <module name="teacherservice" options="-parameters" />
+      <module name="util" options="-parameters" />
+    </option>
   </component>
 </project>

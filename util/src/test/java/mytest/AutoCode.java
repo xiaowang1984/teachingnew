@@ -116,7 +116,7 @@ public class AutoCode {
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
 //        strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
-        strategy.setInclude("imgs");
+        strategy.setInclude("imgbytes");
         strategy.setSuperEntityColumns("id");
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");

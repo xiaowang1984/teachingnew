@@ -76,4 +76,19 @@ public class SkillServiceImpl extends ServiceImpl<SkillMapper, Skill> implements
         }
         return true;
     }
+
+    @Override
+    public boolean del(Integer id) {
+        return delByParentId(id);
+    }
+    private boolean delByParentId(Integer id){
+        QueryWrapper<Skill> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("parent_id",id);
+        List<Skill> skills = this.list(queryWrapper);
+        for (Skill skill : skills){
+            delByParentId(skill.getId());
+        }
+        return removeById(id);
+
+    }
 }

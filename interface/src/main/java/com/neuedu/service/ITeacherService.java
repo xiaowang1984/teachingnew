@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.neuedu.pojo.Teacher;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -19,4 +20,5 @@ public interface ITeacherService extends IService<Teacher> {
     List<Teacher> list(Teacher teacher);
     int checkNo(String no);
     Teacher getOne(String no);
+    Collection<Teacher> getByIds(String ids);
 }

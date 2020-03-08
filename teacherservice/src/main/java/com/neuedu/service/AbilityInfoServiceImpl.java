@@ -31,6 +31,8 @@ public class AbilityInfoServiceImpl extends ServiceImpl<AbilityInfoMapper, Abili
             queryWrapper.like("name",abilityInfo.getName());
         if(abilityInfo.getIsDel()!=null)
             queryWrapper.eq("is_del",abilityInfo.getIsDel());
+        if(abilityInfo.getDirectionId() != null)
+            queryWrapper.eq("direction_id",abilityInfo.getDirectionId());
         return this.page(new Page<>(abilityInfo.getPageNo(),abilityInfo.getPageSize()),queryWrapper);
     }
 

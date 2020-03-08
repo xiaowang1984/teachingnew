@@ -13,6 +13,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -64,5 +66,15 @@ public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> impl
         QueryWrapper<Teacher> wrapper = new QueryWrapper<>();
         wrapper.eq("no",no.trim());
         return teacherMapper.selectOne(wrapper);
+    }
+
+    @Override
+    public Collection<Teacher> getByIds(String ids) {
+        String[] split = ids.split(",");
+        List<Integer> list = new ArrayList<>(split.length);
+        for (String id : split) {
+            list.add(Integer.parseInt(id));
+        }
+        return this.listByIds(list);
     }
 }
