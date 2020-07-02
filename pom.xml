@@ -30,7 +30,7 @@
         <netty-all.version>4.0.35.Final</netty-all.version>
         <jackson.version>2.9.7</jackson.version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
-        <mysql.version>5.1.6</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <dubbo-springboot.version>0.2.1.RELEASE</dubbo-springboot.version>
         <jasypt.version>2.0.0</jasypt.version>
         <common.version>4.4.2</common.version>
