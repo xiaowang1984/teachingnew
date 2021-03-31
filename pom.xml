@@ -38,7 +38,7 @@
         <jedis.version>2.9.0</jedis.version>
         <fdfs.version>1.26.6</fdfs.version>
         <fastjson.version>1.2.62</fastjson.version>
-        <guava.version>27.0.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
     </properties>
     <dependencyManagement>
         <dependencies>
