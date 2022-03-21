@@ -26,7 +26,7 @@
         <lombok.version>1.16.20</lombok.version>
         <spring-cloud-alibaba-dependencies.version>0.2.1.RELEASE</spring-cloud-alibaba-dependencies.version>
         <dubbo-nacos.version>0.0.1</dubbo-nacos.version>
-        <dubbo.version>2.6.6</dubbo.version>
+        <dubbo.version>2.6.9</dubbo.version>
         <netty-all.version>4.0.35.Final</netty-all.version>
         <jackson.version>2.9.7</jackson.version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
