@@ -37,7 +37,7 @@
         <jwt.version>3.4.0</jwt.version>
         <jedis.version>2.9.0</jedis.version>
         <fdfs.version>1.26.6</fdfs.version>
-        <fastjson.version>1.2.62</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <guava.version>27.0.1-jre</guava.version>
     </properties>
     <dependencyManagement>
